@@ -1,0 +1,43 @@
+<div id="nav-bar" class="container">
+  <p>
+    <mat-toolbar color="primary" class="mat-elevation-z2">
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>Image center</span>
+      <span class="example-spacer"></span>
+      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+      </button>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+      </button>
+    </mat-toolbar>
+  </p>
+</div>
+
+<div class="container" style="position: relative; ">
+  <div class="image-holder my-4">
+    <p class='mat-title mb-2'>Pick a image!</p>
+    <ngp-image-picker [_config]="this.config" ($imageChanged)="onChangeImage($event)" ($imageOriginal)="onGetOriginalImage($event)">
+    </ngp-image-picker>
+  </div>
+</div>
+
+<div id="footer" class="container" style="width: 100%;">
+  <mat-toolbar color="primary">
+    <span>V {{version}}</span>
+    <span class="example-spacer"></span>
+
+    <div fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="gappx">
+      <p class="mat-caption mr-2" style="text-align: center;">
+        powered by
+      </p>
+      <span class="mat-body mr-2">
+        jalejandro2928
+      </span>
+    </div>
+
+    <img src="../../../assets/images/avatar.jpg" alt="jalejandro2928" style="width: 40px; height: 40px; border-radius: 50%;">
+  </mat-toolbar>
+</div>
