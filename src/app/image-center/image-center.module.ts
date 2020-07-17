@@ -8,6 +8,7 @@ import { ImageCenterComponent } from './image-center/image-center.component';
 import { NgpImagePickerModule } from './../shared/ngp-image-picker/ngp-image-picker.module';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [ImageCenterComponent],
@@ -19,6 +20,7 @@ import { MatIconModule } from '@angular/material/icon';
     MatButtonModule,
     MatIconModule,
     FlexLayoutModule,
+    MatMenuModule,
   ],
 })
 export class ImageCenterModule {}

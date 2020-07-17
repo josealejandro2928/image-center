@@ -16,6 +16,11 @@ export class ImageCenterComponent implements OnInit {
     language: 'en',
   };
   version = environment.version;
+  url = environment.url;
+  linkFacebook = `https://www.facebook.com/sharer/sharer.php?u=${this.url}`;
+  linkLinkedin = `https://www.linkedin.com/shareArticle?mini=true&amp;url=${this.url}&amp;title=7 Marketing Skills You Need To Get A Promotion&amp;summary=Are you vying for a promotion`;
+  linkWhatApp = `https://api.whatsapp.com/send?text=${this.url}`;
+  linkTelegram = `https://t.me/share/url?url=${this.url}`;
   constructor() {}
 
   ngOnInit(): void {}

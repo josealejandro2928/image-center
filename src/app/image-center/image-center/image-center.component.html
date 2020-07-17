@@ -9,9 +9,40 @@
       <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
         <mat-icon>favorite</mat-icon>
       </button>
-      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" mat-button [matMenuTriggerFor]="menu">
         <mat-icon>share</mat-icon>
       </button>
+
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item fxLayout="row" fxFlexAlign="start center">
+          <a [href]="this.linkFacebook" target="_blank" data-mce-target="_blank"><img src="../../../assets/images/facebook.svg"
+              alt="social-icons-02-1" style="width: 40px; height: 40px; border-radius: 50%;">
+          </a>
+          &nbsp;
+          facebook
+        </button>
+        <button mat-menu-item fxLayout="row" fxFlexAlign="start center">
+          <a [href]="this.linkLinkedin" target="_blank" data-mce-target="_blank"><img src="../../../assets/images/linkedin.svg"
+              alt="social-icons-02-1" style="width: 40px; height: 40px; border-radius: 50%;">
+          </a>
+          &nbsp;
+          linkedin
+        </button>
+        <button mat-menu-item fxLayout="row" fxFlexAlign="start center">
+          <a [href]="this.linkWhatApp" target="_blank" data-mce-target="_blank"><img src="../../../assets/images/whatsapp.png"
+              alt="social-icons-02-1" style="width: 40px; height: 40px; border-radius: 50%;">
+          </a>
+          &nbsp;
+          whatsapp
+        </button>
+        <button mat-menu-item fxLayout="row" fxFlexAlign="start center">
+          <a [href]="this.linkTelegram" target="_blank" data-mce-target="_blank"><img src="../../../assets/images/telegram.png"
+              alt="social-icons-02-1" style="width: 40px; height: 40px; border-radius: 50%;">
+          </a>
+          &nbsp;
+          telegram
+        </button>
+      </mat-menu>
     </mat-toolbar>
   </p>
 </div>
