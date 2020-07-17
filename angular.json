@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "tienda-angular": {
+    "image-center": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -26,7 +26,7 @@
               "crypto-js",
               "resize-observer"
             ],
-            "outputPath": "dist/tienda-angular",
+            "outputPath": "dist/image-center",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -72,18 +72,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "tienda-angular:build"
+            "browserTarget": "image-center:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "tienda-angular:build:production"
+              "browserTarget": "image-center:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "tienda-angular:build"
+            "browserTarget": "image-center:build"
           }
         },
         "test": {
@@ -118,7 +118,7 @@
         }
       }
     },
-    "tienda-angular-e2e": {
+    "image-center-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -127,11 +127,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "tienda-angular:serve"
+            "devServerTarget": "image-center:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "tienda-angular:serve:production"
+              "devServerTarget": "image-center:serve:production"
             }
           }
         },
@@ -147,7 +147,7 @@
       }
     }
   },
-  "defaultProject": "tienda-angular",
+  "defaultProject": "image-center",
   "schematics": {
     "@schematics/angular:component": {
       "style": "scss"
