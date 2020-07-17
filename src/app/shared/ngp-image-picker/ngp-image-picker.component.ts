@@ -88,7 +88,7 @@ export class NgpImagePickerComponent implements OnInit {
     'Max dimensions': 'Max dimensions',
     'aspect-ratio': 'aspect-ratio',
     'max-width(px)': 'max-width(px)',
-    'max-height(px)': 'max. alto',
+    'max-height(px)': 'max-height(px)',
     Format: 'Format',
     Crop: 'Crop',
     'width(px)': 'width(px)',
