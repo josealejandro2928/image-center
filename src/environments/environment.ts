@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   version: '1.0',
-  url: 'https://cojetuimagen.com',
+  url: 'https://cojetuimagen.cubanearme.com',
 };
 
 /*

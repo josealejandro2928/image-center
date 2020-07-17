@@ -260,6 +260,7 @@ export class NgpImagePickerComponent implements OnInit {
     }).then((data: any) => {
       // console.log('ImagePickerComponent -> ngOnInit -> data', data);
       this.maxHeight = data.height;
+      this.maxWidth = data.width;
       if (this.arrayCopiedImages.length <= 20) {
         this.arrayCopiedImages.push(data.dataUri);
       }
