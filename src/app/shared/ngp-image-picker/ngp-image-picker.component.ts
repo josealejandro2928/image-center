@@ -91,6 +91,8 @@ export class NgpImagePickerComponent implements OnInit {
     'max-height(px)': 'max. alto',
     Format: 'Format',
     Crop: 'Crop',
+    'width(px)': 'width(px)',
+    'height(px)': 'height(px)',
   };
   labelEs: any = {
     'Upload a image': 'Suba una imagen',
@@ -106,6 +108,8 @@ export class NgpImagePickerComponent implements OnInit {
     'max-height(px)': 'max. alto',
     Format: 'Formato',
     Crop: 'Recortar',
+    'width(px)': 'ancho(px)',
+    'height(px)': 'altura(px)',
   };
 
   labels = this.labelEn;
