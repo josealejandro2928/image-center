@@ -520,6 +520,7 @@ export class NgpImagePickerComponent implements OnInit {
   onRestore() {
     if (this.arrayCopiedImages.length) {
       this.imageSrc = this.arrayCopiedImages.pop();
+      this.originImageSrc = this.lastOriginSrc + '';
     } else {
       this.imageSrc = this.lastOriginSrc;
       this.originImageSrc = this.lastOriginSrc + '';
