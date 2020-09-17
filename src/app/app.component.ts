@@ -14,26 +14,7 @@ export class AppComponent {
   title = 'ngp-image-picker-test';
   //////////////////////////////////////////////////////////
 
-  constructor(private spinner: NgxSpinnerService, private router: Router) {
-    /////////////////////////////////////////////////////////////////
-    this.router.events
-      .pipe(
-        filter(
-          (event) =>
-            event instanceof NavigationEnd || event instanceof NavigationError || event instanceof NavigationCancel,
-        ),
-      )
-      .subscribe(
-        () => {
-          document.scrollingElement.scroll(0, 0);
-        },
-        (error) => {
-          console.log(error);
-        },
-      );
-
-    //////////////////////////////////////////////////////////////////
-  }
+  constructor(private spinner: NgxSpinnerService, private router: Router) {}
 
   ngOnInit(): void {
     this.spinner.show();

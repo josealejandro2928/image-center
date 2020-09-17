@@ -13,7 +13,7 @@ export class ImageCenterComponent implements OnInit {
     height: '480px',
     width: '100%',
     compressInitial: true,
-    language: 'en',
+    language: 'es',
   };
   version = environment.version;
   url = environment.url;

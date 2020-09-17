@@ -5,7 +5,7 @@
       <mat-icon class="mat-18">add_a_photo</mat-icon>
     </button>
 
-    <input type="file" style="display: none;" [id]="'filePicker-'+this.uuidFilePicker" (change)="handleFileSelect($event)">
+    <input #imagePicker type="file" style="display: none;" [id]="'filePicker-'+this.uuidFilePicker" (change)="handleFileSelect($event)">
 
   </div>
 
@@ -13,15 +13,13 @@
 <div *ngIf="loadImage" class="place-image">
   <div class="image-holder-loaded" [ngStyle]="{'height': this.config.height,'borderRadius':this.config.borderRadius}">
     <img [src]="this.imageSrc" alt="image-loaded" [ngStyle]="{'borderRadius':this.config.borderRadius}">
-    <input type="file" style="display: none;" [id]="'filePicker-'+this.uuidFilePicker" (change)="handleFileSelect($event)">
-    <p *ngIf="this.calculateSize()" class="mat-caption image-caption">
-      size: {{this.calculateSize()}}Kb &nbsp; {{this.format}}
-      <span matTooltip="{{labels['You must edit the image in order to resize it']}}" *ngIf="this.calculateSize()>120"
-        style="color: #f44336; font-weight: 400;">
-        &nbsp; {{labels['too large']}}
-      </span>
-    </p>
+    <input #imagePicker type="file" style="display: none;" [id]="'filePicker-'+this.uuidFilePicker" (change)="handleFileSelect($event)">
   </div>
+  <p *ngIf="this.calculateSize()" class="mat-caption image-caption"
+    [ngStyle]="{'color': (this.calculateSize()>120)?'#f44336':'unset','fontWeight': (this.calculateSize()>120)?'500':'unset'}">
+    size: {{this.calculateSize()}}Kb &nbsp; {{this.format}}
+  </p>
+
   <div style="flex-direction: row;box-sizing: border-box;display: flex;place-content: flex-start;align-items: flex-start;"
     class="editing-bar-btn mt-2">
     <button mat-icon-button matTooltip="{{labels['Upload a image']}}" (click)="onUpload($event)">
@@ -123,7 +121,7 @@
           </mat-form-field>
         </div>
 
-        <p>
+        <p style="margin-bottom: 4px !important;">
           <button mat-icon-button color="primary" (click)="onCrop()">
             <mat-icon>
               crop
@@ -135,13 +133,25 @@
 
 
 
-      <p *ngIf="this.calculateSize()" class="mat-caption" style="text-align: end;margin: 8px 0px;">
-        size: {{this.calculateSize()}}Kb &nbsp; {{this.format}}
-        <span matTooltip="{{labels['You must edit the image in order to resize it']}}" *ngIf="this.calculateSize()>120"
-          style="color: #f44336; font-weight: 400;">
-          &nbsp; {{labels['too large']}}
-        </span>
-      </p>
+      <div style="flex-direction: row;
+      box-sizing: border-box;
+      display: flex;
+      place-content: center space-between;
+      align-items: center;">
+
+        <button style="padding: 0px 8px;
+        height: 34px;
+        box-sizing: border-box;
+        background-color: #fff;
+        color: black;" mat-flat-button (click)="onCloseEditPanel()">Guardar</button>
+
+        <p *ngIf="this.calculateSize()" class="mat-caption image-caption"
+          [ngStyle]="{'color': (this.calculateSize()>120)?'#f44336':'unset','fontWeight': (this.calculateSize()>120)?'500':'unset'}">
+          size: {{this.calculateSize()}}Kb &nbsp; {{this.format}}
+        </p>
+
+      </div>
+
 
     </div>
   </div>
