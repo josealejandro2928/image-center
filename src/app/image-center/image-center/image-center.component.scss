@@ -6,6 +6,22 @@
   margin: 0 auto;
 }
 
+
+//---------Poner todos los estilos que de cada step en particular-------------///
+
+:host::ng-deep {
+  .image-holder {
+    border: 1px dashed rgba(0, 0, 0, .2) !important;
+  }
+
+  .editing-bar-btn {
+    mat-icon {
+      color: rgba(0, 0, 0, .5);
+    }
+  }
+}
+
+
 .image-holder {
   width: 100%;
   display: flex;
@@ -18,6 +34,12 @@
 }
 
 #nav-bar {
+  position: fixed;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+
   @media (max-width:800px) {
     padding: 0px;
   }
@@ -25,10 +47,13 @@
 }
 
 #footer {
+  position: fixed;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+
   @media (max-width:800px) {
     padding: 0px;
-    position: absolute;
-    bottom: 0px;
   }
-
 }
