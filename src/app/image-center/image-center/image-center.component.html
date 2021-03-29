@@ -53,7 +53,8 @@
     <ngp-image-picker [_config]="this.config" ($imageChanged)="onChangeImage($event)" ($imageOriginal)="onGetOriginalImage($event)">
     </ngp-image-picker>
   </div> -->
-  <p class="mat-body-2" style="font-size: 17px;margin: 32px 0px;">
+  <br>
+  <p class="mat-body-2" class="text">
     Suba imágenes, conviértalas a formatos jpg, png, webp , comprímelas y recórtalas a su gusto. Nunca fue tan fácil !!!!
 
   </p>
@@ -63,13 +64,13 @@
       </ngp-image-picker>
     </div>
   </div>
-  <p class="my-2">
+  <p class="my-3">
     <button style="width: 200px !important;" color="primary" mat-stroked-button (click)="onDownloadAll()">
       <mat-icon>download</mat-icon>
       Descargarlas todas
     </button>
   </p>
-  <p class="my-2">
+  <p class="my-3">
     <button style="width: 200px !important;" color="warn" mat-stroked-button (click)="onRemoveAll()">
       <mat-icon>delete</mat-icon>
       Eliminarlas todas

@@ -6,6 +6,17 @@
   margin: 0 auto;
 }
 
+.text {
+  font-size: 17px;
+  margin: 32px 0px 0px 0px;
+
+  @media(max-width:800px) {
+    margin: 64px 0px 0px 0px;
+  }
+
+}
+
+
 
 //---------Poner todos los estilos que de cada step en particular-------------///
 
@@ -47,11 +58,11 @@
 }
 
 #footer {
-  position: fixed;
-  bottom: 0px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 999;
+  position: relative;
+  // bottom: 0px;
+  // left: 50%;
+  // transform: translateX(-50%);
+  // z-index: 999;
 
   @media (max-width:800px) {
     padding: 0px;
