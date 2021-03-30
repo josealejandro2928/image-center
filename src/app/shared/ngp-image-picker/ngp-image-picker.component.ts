@@ -1,15 +1,4 @@
-import {
-  Component,
-  OnInit,
-  Input,
-  Output,
-  EventEmitter,
-  ViewEncapsulation,
-  ViewChild,
-  ElementRef,
-  ChangeDetectionStrategy,
-  ChangeDetectorRef,
-} from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, ViewEncapsulation, ViewChild, ElementRef, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
 import { ResizeObserver } from 'resize-observer';
 
 export interface ImagePickerConf {
@@ -124,6 +113,7 @@ export class NgpImagePickerComponent implements OnInit {
         this.lastOriginSrc = value;
         this.$imageOriginal.next(this.originImageSrc);
         this.loadImage = true;
+        this.chRef.markForCheck();
       });
     } else {
       this.imageSrc = null;
@@ -139,6 +129,7 @@ export class NgpImagePickerComponent implements OnInit {
       this.cropWidth = 150;
       this.maintainAspectRatio = true;
       this.showEditPanel = false;
+      this.chRef.markForCheck();
     }
   }
 
