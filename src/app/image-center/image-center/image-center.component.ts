@@ -32,7 +32,7 @@ export class ImageCenterComponent implements OnInit, AfterViewInit {
   galleryImages: any[] = [];
   selectedGalleryImages: any[] = [];
 
-  constructor() {}
+  constructor() { }
 
   ngOnInit(): void {
     this.createForms();
