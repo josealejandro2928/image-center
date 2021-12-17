@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@use '~@angular/material' as mat;
+@use '@angular/material' as mat;
 
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules/swiper/css/swiper.min.css";
@@ -10,7 +10,7 @@
 @import "~ngx-toastr/toastr";
 
 // ---------------Material Themin -----------------///
-@import "~@angular/material/theming";
+@import "@angular/material/theming";
 @include mat.core();
 $custom-typography: mat.define-typography-config($font-family: "Poppins"
 );
