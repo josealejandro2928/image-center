@@ -1,6 +1,7 @@
 import { environment } from './../../../environments/environment';
 import { AfterViewInit, Component, OnInit } from '@angular/core';
-import { ImagePickerConf } from 'src/app/shared/ngp-image-picker/ngp-image-picker.component';
+// import { ImagePickerConf } from 'src/app/shared/ngp-image-picker/ngp-image-picker.component';
+import { ImagePickerConf } from 'ngp-image-picker'
 
 @Component({
   selector: 'app-image-center',
