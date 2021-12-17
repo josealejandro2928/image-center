@@ -1,7 +1,7 @@
 # NgpImagePicker
 
 Angular library based on angular material components for the selection, edition and compression of images in png, jpeg, webp formats
-This library was generated with Angular CLI version 10.0.0.
+This library was generated with Angular CLI version 10.0.0, and support the latest version of angular.
 
 ### Description
 
@@ -101,7 +101,7 @@ export class ExampleComponent {
 </ngp-image-picker>
 ```
 
-![Image 1](https://havanatursa.com/assets/images/npm/Capture1.jpeg)
+![Image 1](https://ngp-image-picker.surge.sh/assets/images/1.png)
 
 ### More about the component
 
@@ -126,16 +126,14 @@ Once you have selected an image, three buttons are enabled below the image:
 
 In the edit panel, you can change the quality ratio to compress the file size (in kb). Also changing width and height in px keeping aspect ratio or not, is selectable. You can change the image format as you wish, the options are 'png', 'webp','jpeg'. The 'Png' format is not affected by changing the quality ratio.
 
-![Image 2](https://havanatursa.com/assets/images/npm/Capture2.jpeg)
+![Image 2](https://ngp-image-picker.surge.sh/assets/images/2.png)
 
 ### Control section
 
-![Image 3](https://havanatursa.com/assets/images/npm/Capture3.jpeg)
+![Image 3](https://ngp-image-picker.surge.sh/assets/images/3.png)
 
 ### All together
 
-![Image 4](https://havanatursa.com/assets/images/npm/Capture4.jpeg)
+![Image 4](https://ngp-image-picker.surge.sh/assets/images/4.png)
 
-### Live Demo
-
-[https://cogetuimagen.cubanearme.com/](https://cogetuimagen.cubanearme.com/)
+### [DEMO](https://ngp-image-picker.surge.sh/)
