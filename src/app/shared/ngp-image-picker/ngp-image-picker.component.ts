@@ -1,4 +1,15 @@
-import { Component, OnInit, Input, Output, EventEmitter, ViewEncapsulation, ViewChild, ElementRef, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  Input,
+  Output,
+  EventEmitter,
+  ViewEncapsulation,
+  ViewChild,
+  ElementRef,
+  ChangeDetectionStrategy,
+  ChangeDetectorRef,
+} from '@angular/core';
 import { ResizeObserver } from 'resize-observer';
 
 export interface ImagePickerConf {
@@ -99,9 +110,29 @@ export class NgpImagePickerComponent implements OnInit {
     'width(px)': 'ancho(px)',
     'height(px)': 'altura(px)',
   };
+  labelFr: any = {
+    'Upload a image': 'Charger une image',
+    'You must edit the image in order to resize it': 'Vous devez éditer l\'image pour changer sa taille',
+    'too large': 'Trop grande',
+    'Open the editor panel': 'Ouvrir le panneau d\'édition',
+    'Download the image': 'Télécharger l\'image',
+    'Control Panel': 'Panneau de commande',
+    Remove: 'Supprimer',
+    Quality: 'Qualité',
+    'Max dimensions': 'Dimensions maximales',
+    'aspect-ratio': 'rapport de forme',
+    'max-width(px)': 'largeur max.',
+    'max-height(px)': 'hauteur max',
+    Format: 'Format',
+    Crop: 'Recadrer',
+    'width(px)': 'largeur(px)',
+    'height(px)': 'hauteur(px)',
+  };
 
   labels = this.labelEn;
   arrayCopiedImages: any[] = [];
+
+  @Input() color: 'primary' | 'warn' | 'accent' = 'primary';
 
   @Input() set _imageSrc(value) {
     if (value != undefined) {
@@ -141,9 +172,11 @@ export class NgpImagePickerComponent implements OnInit {
   @Output() $imageChanged: EventEmitter<any> = new EventEmitter<any>();
   @Output() $imageOriginal: EventEmitter<any> = new EventEmitter<any>();
 
-  constructor(private chRef: ChangeDetectorRef) {}
+  constructor(private chRef: ChangeDetectorRef) {
+  }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
 
   onUpload(event) {
     event.preventDefault();
@@ -257,6 +290,9 @@ export class NgpImagePickerComponent implements OnInit {
         if (value.language == 'es') {
           this.labels = { ...this.labelEs };
         }
+        if (value.language == 'fr') {
+          this.labels = { ...this.labelFr };
+        }
       }
     }
   }
@@ -317,8 +353,7 @@ export class NgpImagePickerComponent implements OnInit {
   }
 
   calculateSize() {
-    let base64regex = /^([0-9a-zA-Z+/]{4})*(([0-9a-zA-Z+/]{2}==)|([0-9a-zA-Z+/]{3}=))?$/;
-    if (this.imageSrc && base64regex.test(this.imageSrc.split(',')[1])) {
+    if (this.imageSrc && this.imageSrc.length) {
       return Math.ceil(((3 / 4) * this.imageSrc.length) / 1024);
     } else {
       return;
@@ -348,6 +383,7 @@ export class NgpImagePickerComponent implements OnInit {
       this.loadImage = true;
     }
   }
+
   async onChangeFormat(format) {
     let qualityItem = this.quality / 100;
     this.maxHeight = this.maxHeight && +this.maxHeight ? this.maxHeight : 2000;
@@ -399,6 +435,7 @@ export class NgpImagePickerComponent implements OnInit {
     croper.style.width = this.cropWidth + 'px';
     croper.style.height = this.cropHeight + 'px';
   }
+
   ////////////////////////////////////////////////
 
   wait(ms?): Promise<any> {
@@ -556,6 +593,7 @@ export class NgpImagePickerComponent implements OnInit {
         console.log(e);
       });
   }
+
   onRestore() {
     if (this.arrayCopiedImages.length) {
       let lastState = this.arrayCopiedImages.pop();

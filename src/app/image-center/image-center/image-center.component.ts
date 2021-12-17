@@ -8,13 +8,6 @@ import { ImagePickerConf } from 'src/app/shared/ngp-image-picker/ngp-image-picke
   styleUrls: ['./image-center.component.scss'],
 })
 export class ImageCenterComponent implements OnInit, AfterViewInit {
-  config: ImagePickerConf = {
-    borderRadius: '16px',
-    height: '480px',
-    width: '100%',
-    compressInitial: true,
-    language: 'es',
-  };
   version = environment.version;
   url = environment.url;
   linkFacebook = `https://www.facebook.com/sharer/sharer.php?u=${this.url}`;
@@ -23,7 +16,7 @@ export class ImageCenterComponent implements OnInit, AfterViewInit {
   // linkTelegram = `https://t.me/share/url?url=${this.url}`;
   imagePickerConf: ImagePickerConf = {
     borderRadius: '8px',
-    language: 'es',
+    language: 'en',
     height: '250px',
     width: '220px',
     hideDownloadBtn: false,
@@ -39,7 +32,7 @@ export class ImageCenterComponent implements OnInit, AfterViewInit {
     if (window.innerWidth < 800) {
       this.imagePickerConf = {
         borderRadius: '8px',
-        language: 'es',
+        language: 'en',
         height: '170px',
         width: '150px',
         hideDownloadBtn: false,

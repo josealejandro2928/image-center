@@ -31,7 +31,7 @@
     "ngx-spinner": "^9.0.2",
     "ngx-swiper-wrapper": "^9.0.1",
     "ngx-toastr": "^12.1.0",
-    "resize-observer": "^1.0.0",
+    "resize-observer": "^1.0.4",
     "rxjs": "^6.5.3",
     "rxjs-compat": "^6.5.3",
     "tslib": "^2.0.0",
