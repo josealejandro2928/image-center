@@ -1,7 +1,15 @@
 # NgpImagePicker
 
-Angular library based on angular material components for the selection, edition and compression of images in png, jpeg, webp formats
+Angular library for the selection, edition and compression of images in png, jpeg and webp formats
 This library was generated with Angular CLI version 10.0.0, and support the latest version of angular.
+Previous versions of this library relied entirely on angular material components.
+Today it is made with html and css without any extra components.
+You only need load the icons from here:
+(You should add this line to your index.html head)
+
+```html
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+```
 
 ### Description
 
@@ -12,15 +20,6 @@ In many projects it is of interest to upload images for a backend, and sometimes
 ```sh
 npm i ngp-image-picker --save
 ```
-
-`NgpImagePicker` requires [Angular Material](https://material.angular.io/guide/getting-started/).
-For angular version 8 or higher projects
-
-```sh
-ng add @angular/material
-```
-
-Importing the BrowserAnimationsModule into your application enables Angular's animation system. Declining this will disable most of Angular Material's animations.
 
 ### External Resource
 
@@ -131,6 +130,10 @@ In the edit panel, you can change the quality ratio to compress the file size (i
 ### Control section
 
 ![Image 3](https://ngp-image-picker.surge.sh/assets/images/3.png)
+
+### Croping images
+
+![Image 4](https://ngp-image-picker.surge.sh/assets/images/5.png)
 
 ### All together
 
