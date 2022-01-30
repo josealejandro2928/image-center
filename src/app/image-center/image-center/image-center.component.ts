@@ -30,8 +30,8 @@ export class ImageCenterComponent implements OnInit, AfterViewInit {
       this.imagePickerConf = {
         borderRadius: '8px',
         language: 'en',
-        height: '150px',
-        width: '120px',
+        height: '180px',
+        width: '150px',
         hideDownloadBtn: false,
       };
     }

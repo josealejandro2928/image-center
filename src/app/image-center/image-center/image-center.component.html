@@ -1,13 +1,18 @@
 <app-toolbar></app-toolbar>
 
 <br />
-<br />
+<br fxHide.lt-md />
 <div class="container" style="position: relative">
   <p class="mat-body-2" class="text">
-    Suba imágenes, conviértalas a formatos jpg, png, webp , comprímelas y recórtalas a su gusto. Nunca fue tan fácil
-    !!!!
+    Upload images, convert them to jpg, png, webp, compress and crop them to your liking. It has never been so easy !!!!
   </p>
-  <div class="py-3" fxLayout="row wrap" fxLayoutAlign="start start" fxLayoutGap="1rem">
+  <div
+    class="py-3"
+    fxLayout="row wrap"
+    fxLayoutAlign="start start"
+    fxLayoutAlign.lt-md="center start"
+    fxLayoutGap="1rem"
+  >
     <div class="card-image mt-3" *ngFor="let image of galleryImages; let i = index">
       <ngp-image-picker
         [_imageSrc]="image.image"
@@ -21,14 +26,14 @@
   <br />
   <br />
 
-  <div fxLayout="row" fxLayoutAlign="start start" fxLayoutGap="gappx">
-    <p class="m-3">
+  <div fxLayout="row wrap" fxLayoutAlign="start start" fxLayoutGap="gappx">
+    <p ngClass.gt-sm="m-3" ngClass.lt-md="m-1">
       <button style="width: 200px !important" mat-stroked-button (click)="onDownloadAll()">
         <mat-icon>download</mat-icon>
         Descargarlas todas
       </button>
     </p>
-    <p class="m-3">
+    <p ngClass.gt-sm="m-3" ngClass.lt-md="m-1">
       <button style="width: 200px !important" color="warn" mat-stroked-button (click)="onRemoveAll()">
         <mat-icon>delete</mat-icon>
         Eliminarlas todas
