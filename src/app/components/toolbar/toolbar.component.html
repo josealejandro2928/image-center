@@ -1,0 +1,76 @@
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+  <div class="container" fxLayout="row" fxLayoutAlign="start center">
+    <img
+      width="40"
+      alt="Angular Logo"
+      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
+    />
+    <span>Centro de imágenes</span>
+    <div class="spacer"></div>
+    <a
+      aria-label="Npm package URL"
+      target="_blank"
+      rel="noopener"
+      href="https://www.npmjs.com/package/ngp-image-picker"
+      title="NPM"
+    >
+      <img style="height: 32px" src="../../../assets/images/npm-svgrepo-com.svg" alt="" srcset="" />
+    </a>
+    <!-- <a
+      aria-label="Angular on YouTube"
+      target="_blank"
+      rel="noopener"
+      href="https://youtube.com/angular"
+      title="YouTube"
+    >
+      <svg
+        id="youtube-logo"
+        height="24"
+        width="24"
+        data-name="Logo"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="#fff"
+      >
+        <path d="M0 0h24v24H0V0z" fill="none" />
+        <path
+          d="M21.58 7.19c-.23-.86-.91-1.54-1.77-1.77C18.25 5 12 5 12 5s-6.25 0-7.81.42c-.86.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.86.91 1.54 1.77 1.77C5.75 19 12 19 12 19s6.25 0 7.81-.42c.86-.23 1.54-.91 1.77-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM10 15V9l5.2 3-5.2 3z"
+        />
+      </svg>
+    </a> -->
+    <button
+      mat-icon-button
+      class="example-icon"
+      aria-label="Example icon-button with share icon"
+      mat-button
+      [matMenuTriggerFor]="menu"
+    >
+      <mat-icon>share</mat-icon>
+    </button>
+
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item fxLayout="row" fxFlexAlign="start center">
+        <a [href]="this.linkFacebook" target="_blank" data-mce-target="_blank"
+          ><img
+            src="../../../assets/images/facebook.svg"
+            alt="social-icons-02-1"
+            style="width: 40px; height: 40px; border-radius: 50%"
+          />
+        </a>
+        &nbsp; facebook
+      </button>
+      <button mat-menu-item fxLayout="row" fxFlexAlign="start center">
+        <a [href]="this.linkWhatApp" target="_blank" data-mce-target="_blank"
+          ><img
+            src="../../../assets/images/whatsapp.png"
+            alt="social-icons-02-1"
+            style="width: 40px; height: 40px; border-radius: 50%"
+          />
+        </a>
+        &nbsp; whatsapp
+      </button>
+    </mat-menu>
+  </div>
+</div>
+<div style="height: 62px"></div>

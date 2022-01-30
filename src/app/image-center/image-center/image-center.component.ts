@@ -1,7 +1,7 @@
 import { environment } from './../../../environments/environment';
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 // import { ImagePickerConf } from 'src/app/shared/ngp-image-picker/ngp-image-picker.component';
-import { ImagePickerConf } from 'ngp-image-picker'
+import { ImagePickerConf } from 'ngp-image-picker';
 
 @Component({
   selector: 'app-image-center',
@@ -10,11 +10,7 @@ import { ImagePickerConf } from 'ngp-image-picker'
 })
 export class ImageCenterComponent implements OnInit, AfterViewInit {
   version = environment.version;
-  url = environment.url;
-  linkFacebook = `https://www.facebook.com/sharer/sharer.php?u=${this.url}`;
-  // linkLinkedin = `https://www.linkedin.com/shareArticle?mini=true&amp;url=${this.url}&amp;title=7 Marketing Skills You Need To Get A Promotion&amp;summary=Are you vying for a promotion`;
-  linkWhatApp = `https://api.whatsapp.com/send?text=${this.url}`;
-  // linkTelegram = `https://t.me/share/url?url=${this.url}`;
+  TOTAL_IMAGES = 8;
   imagePickerConf: ImagePickerConf = {
     borderRadius: '8px',
     language: 'en',
@@ -26,7 +22,7 @@ export class ImageCenterComponent implements OnInit, AfterViewInit {
   galleryImages: any[] = [];
   selectedGalleryImages: any[] = [];
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
     this.createForms();
@@ -34,8 +30,8 @@ export class ImageCenterComponent implements OnInit, AfterViewInit {
       this.imagePickerConf = {
         borderRadius: '8px',
         language: 'en',
-        height: '170px',
-        width: '150px',
+        height: '150px',
+        width: '120px',
         hideDownloadBtn: false,
       };
     }
@@ -55,7 +51,7 @@ export class ImageCenterComponent implements OnInit, AfterViewInit {
           id: null,
           uuid: null,
         };
-        for (let i = 0; i < 6; i++) {
+        for (let i = 0; i < this.TOTAL_IMAGES; i++) {
           if (data?.galeryImages[i]) {
             this.galleryImages.push({ ...data?.galeryImages[i] });
           } else {
@@ -70,7 +66,7 @@ export class ImageCenterComponent implements OnInit, AfterViewInit {
           id: null,
           uuid: null,
         };
-        for (let i = 0; i < 6; i++) {
+        for (let i = 0; i < this.TOTAL_IMAGES; i++) {
           object.uuid = i;
           this.galleryImages.push({ ...object });
         }
@@ -84,7 +80,7 @@ export class ImageCenterComponent implements OnInit, AfterViewInit {
         uuid: null,
       };
 
-      for (let i = 0; i < 6; i++) {
+      for (let i = 0; i < this.TOTAL_IMAGES; i++) {
         object.uuid = i;
         this.galleryImages.push({ ...object });
       }
@@ -101,7 +97,7 @@ export class ImageCenterComponent implements OnInit, AfterViewInit {
 
   updateDom() {
     let c = setTimeout(() => {
-      let allIcons = document.querySelectorAll('.image-upload-btn .mat-icon');
+      let allIcons = document.querySelectorAll('.image-upload-btn .material-icons');
       allIcons.forEach((x: any) => {
         x.innerText = 'wallpaper';
       });

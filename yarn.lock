@@ -3026,13 +3026,6 @@ dom-serializer@^1.0.1:
     domhandler "^4.2.0"
     entities "^2.0.0"
 
-dom7@^2.1.5:
-  version "2.1.5"
-  resolved "https://registry.yarnpkg.com/dom7/-/dom7-2.1.5.tgz#a79411017800b31d8400070cdaebbfc92c1f6377"
-  integrity sha512-xnhwVgyOh3eD++/XGtH+5qBwYTgCm0aW91GFgPJ3XG+jlsRLyJivnbP0QmUBFhI+Oaz9FV0s7cxgXHezwOEBYA==
-  dependencies:
-    ssr-window "^2.0.0"
-
 domelementtype@^2.0.1, domelementtype@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/domelementtype/-/domelementtype-2.2.0.tgz#9a0b6c2782ed6a1c7323d42267183df9bd8b1d57"
@@ -4969,24 +4962,19 @@ neo-async@^2.6.2:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
-ngp-image-picker@^1.5.6:
-  version "1.5.6"
-  resolved "https://registry.yarnpkg.com/ngp-image-picker/-/ngp-image-picker-1.5.6.tgz#c92f8f4ad354ed9ba053752ba2dc281f7781a70d"
-  integrity sha512-H/4BfNWKgZKPlYm/ef8Bdm4J7DwXAtN6UoshZcpPLb0qJTbwr/3VUky3jR5Fz45yFo7YHnF6/kF1bP5gBdQcHg==
+ngp-image-picker@^1.5.7:
+  version "1.5.7"
+  resolved "https://registry.yarnpkg.com/ngp-image-picker/-/ngp-image-picker-1.5.7.tgz#ea2e02c7e64820ab2ded08795ef34a8120ca4230"
+  integrity sha512-gpfnEubhVR41A3qMJo2xv3Uw1qca8D4F+RpBYw42pyp8o6kcRsTP/MBYixtmZXk0MJSglvnohejCzIDjNzvfsA==
   dependencies:
     tslib "^2.0.0"
 
-ngx-spinner@^9.0.2:
-  version "9.0.2"
-  resolved "https://registry.yarnpkg.com/ngx-spinner/-/ngx-spinner-9.0.2.tgz#18123741cec4f7a29fa63d8d9cb769e58f4b8b85"
-  integrity sha512-Yoed+9389GMxHhyPavBA7S3JY5XF38hIhW+qcJuPcxwOJHkhnr6hZFtuSlp1oXMp3HySQPEskWks1joMtmztMA==
-
-ngx-swiper-wrapper@^9.0.1:
-  version "9.0.1"
-  resolved "https://registry.yarnpkg.com/ngx-swiper-wrapper/-/ngx-swiper-wrapper-9.0.1.tgz#0bdd9ef863e7827d5547d9d4f480d6d9c2c7f09d"
-  integrity sha512-Bm0zZZiJSn+Ubif4zLMJ0A4RmKSS4utCnmjpeNCLH4Y2rwLyYMoVggF+zpxhiPZ5f+xVc2QBped3VZvu1tzL9w==
+ngx-spinner@^13.0.0:
+  version "13.0.0"
+  resolved "https://registry.yarnpkg.com/ngx-spinner/-/ngx-spinner-13.0.0.tgz#d8ea9cfbe5775fdd428ddd98a159f4fea4b52d5d"
+  integrity sha512-q37rOYpRu41+/aHqhfSazHUCz9GAY7+4o3POFC69dW1ew+qB4xyH850lAiCwiNbdhpEOPRShU1litkTxQZJC5A==
   dependencies:
-    swiper "^5.3.0"
+    tslib "^2.3.0"
 
 ngx-toastr@^12.1.0:
   version "12.1.0"
@@ -6256,11 +6244,6 @@ run-parallel@^1.1.9:
   dependencies:
     queue-microtask "^1.2.2"
 
-rxjs-compat@^6.5.3:
-  version "6.6.7"
-  resolved "https://registry.yarnpkg.com/rxjs-compat/-/rxjs-compat-6.6.7.tgz#6eb4ef75c0a58ea672854a701ccc8d49f41e69cb"
-  integrity sha512-szN4fK+TqBPOFBcBcsR0g2cmTTUF/vaFEOZNuSdfU8/pGFnNmmn2u8SystYXG1QMrjOPBc6XTKHMVfENDf6hHw==
-
 rxjs@6.6.7, rxjs@^6.5.3:
   version "6.6.7"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.6.7.tgz#90ac018acabf491bf65044235d5863c4dab804c9"
@@ -6683,11 +6666,6 @@ sshpk@^1.7.0:
     safer-buffer "^2.0.2"
     tweetnacl "~0.14.0"
 
-ssr-window@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/ssr-window/-/ssr-window-2.0.0.tgz#98c301aef99523317f8d69618f0010791096efc4"
-  integrity sha512-NXzN+/HPObKAx191H3zKlYomE5WrVIkoCB5IaSdvKokxTpjBdWfr0RaP+1Z5KOfDT0ZVz+2tdtiBkhsEQ9p+0A==
-
 ssri@^8.0.0, ssri@^8.0.1:
   version "8.0.1"
   resolved "https://registry.yarnpkg.com/ssri/-/ssri-8.0.1.tgz#638e4e439e2ffbd2cd289776d5ca457c4f51a2af"
@@ -6835,14 +6813,6 @@ supports-preserve-symlinks-flag@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
-
-swiper@^5.3.0:
-  version "5.4.5"
-  resolved "https://registry.yarnpkg.com/swiper/-/swiper-5.4.5.tgz#a350f654bf68426dbb651793824925512d223c0f"
-  integrity sha512-7QjA0XpdOmiMoClfaZ2lYN6ICHcMm72LXiY+NF4fQLFidigameaofvpjEEiTQuw3xm5eksG5hzkaRsjQX57vtA==
-  dependencies:
-    dom7 "^2.1.5"
-    ssr-window "^2.0.0"
 
 symbol-observable@4.0.0:
   version "4.0.0"

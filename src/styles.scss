@@ -1,8 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
-@use '@angular/material' as mat;
+@use '@angular/material'as mat;
+
+html,
+body {
+  background-color: #323232;
+  color: #fff;
+}
 
 /* You can add global styles to this file, and also import other style files */
-@import "../node_modules/swiper/css/swiper.min.css";
 @import "../node_modules/@angular/material/prebuilt-themes/indigo-pink.css";
 @import "./assets/scss/helpers/helpers";
 @import "./assets/scss/mixins/breakpoints";
@@ -22,7 +27,7 @@ $accent: mat.define-palette(mat.$amber-palette, 600, 500, 400);
 $warn: mat.define-palette(mat.$red-palette);
 
 // Create the theme object (a Sass map containing all of the palettes).
-$default-theme: mat.define-light-theme($primary, $accent, $warn);
+$default-theme: mat.define-dark-theme($primary, $accent, $warn);
 
 // -----Creating Global Variables------
 
@@ -367,4 +372,12 @@ h3,
 h2,
 h4 {
   margin-bottom: 0px !important;
+}
+
+.container {
+  max-width: 1080px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 15px;
+  margin: 0 auto;
 }

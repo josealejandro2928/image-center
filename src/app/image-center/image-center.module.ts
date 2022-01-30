@@ -1,3 +1,4 @@
+import { ToolbarComponent } from './../components/toolbar/toolbar.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatButtonModule } from '@angular/material/button';
 import { NgModule } from '@angular/core';
@@ -12,7 +13,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
-  declarations: [ImageCenterComponent],
+  declarations: [ImageCenterComponent, ToolbarComponent],
   imports: [
     CommonModule,
     ImageCenterRoutingModule,
@@ -24,4 +25,4 @@ import { MatMenuModule } from '@angular/material/menu';
     MatMenuModule,
   ],
 })
-export class ImageCenterModule { }
+export class ImageCenterModule {}

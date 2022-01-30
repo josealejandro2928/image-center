@@ -1,19 +1,5 @@
-.container {
-  max-width: 900px;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
 .text {
   font-size: 17px;
-  margin: 32px 0px 0px 0px;
-
-  @media(max-width:800px) {
-    margin: 64px 0px 0px 0px;
-  }
-
 }
 
 
@@ -22,12 +8,18 @@
 
 :host::ng-deep {
   .image-holder {
-    border: 1px dashed rgba(0, 0, 0, .2) !important;
+    border: 1px dashed #fafafa !important;
+    background-color: #111111 !important;
   }
 
+  .image-upload-btn .material-icons {
+    color: #fafafa !important;
+  }
+
+
   .editing-bar-btn {
-    mat-icon {
-      color: rgba(0, 0, 0, .5);
+    .material-icons {
+      color: #fafafa !important
     }
   }
 }
