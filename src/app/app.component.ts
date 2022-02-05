@@ -1,9 +1,6 @@
 import { Component } from '@angular/core';
 import { NgxSpinnerService } from 'ngx-spinner';
-import { Router, NavigationEnd, NavigationError, NavigationCancel, ActivatedRoute } from '@angular/router';
-import { filter } from 'rxjs/operators';
-import { environment } from 'src/environments/environment';
-import { Subject } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -14,12 +11,9 @@ export class AppComponent {
   title = 'ngp-image-picker-test';
   //////////////////////////////////////////////////////////
 
-  constructor(private spinner: NgxSpinnerService, private router: Router) {}
+  constructor(private spinner: NgxSpinnerService) {}
 
   ngOnInit(): void {
     this.spinner.show();
-    setTimeout(() => {
-      this.spinner.hide();
-    }, 1000);
   }
 }

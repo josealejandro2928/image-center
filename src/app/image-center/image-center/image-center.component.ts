@@ -1,3 +1,4 @@
+import { NgxSpinnerService } from 'ngx-spinner';
 import { environment } from './../../../environments/environment';
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 // import { ImagePickerConf } from 'src/app/shared/ngp-image-picker/ngp-image-picker.component';
@@ -22,7 +23,7 @@ export class ImageCenterComponent implements OnInit, AfterViewInit {
   galleryImages: any[] = [];
   selectedGalleryImages: any[] = [];
 
-  constructor() {}
+  constructor(private spinner: NgxSpinnerService) {}
 
   ngOnInit(): void {
     this.createForms();
@@ -39,6 +40,7 @@ export class ImageCenterComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     this.updateDom();
+    this.spinner.hide();
   }
 
   createForms(data?) {
