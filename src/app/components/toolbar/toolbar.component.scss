@@ -41,3 +41,13 @@
 .toolbar #youtube-logo:hover {
   opacity: 0.8;
 }
+
+button {
+  a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: unset;
+    text-decoration: unset;
+  }
+}
