@@ -4962,10 +4962,10 @@ neo-async@^2.6.2:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
-ngp-image-picker@^1.5.8:
-  version "1.5.8"
-  resolved "https://registry.yarnpkg.com/ngp-image-picker/-/ngp-image-picker-1.5.8.tgz#9994a2223caa47963b3796dd53ae747824ae9ddd"
-  integrity sha512-EoahhDw15xEzPim4DvolhJRxTpZF63spjhxRuAHiS5cb1pW2lYztsAdynZ0iFDUfoXs14gWhgYrsLE1DJUiYog==
+ngp-image-picker@^1.6.4:
+  version "1.6.4"
+  resolved "https://registry.yarnpkg.com/ngp-image-picker/-/ngp-image-picker-1.6.4.tgz#ab1b7cc1368c9a7e0985a7e39836d2c9adf8197d"
+  integrity sha512-4jc+yuZM8WVTQ79SdEhXfa0qZe31gTUpvfhvZgCdil8R1TwA5A4NmSIEVuOAyLiwslNZUtirkWM+3bJgrbvnWw==
   dependencies:
     tslib "^2.0.0"
 
