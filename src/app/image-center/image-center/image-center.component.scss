@@ -12,6 +12,20 @@
 //---------Poner todos los estilos que de cada step en particular-------------///
 
 :host::ng-deep {
+  .image-container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media screen and (max-width:800px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width:599px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
   .image-holder {
     border: 1px dashed #fafafa !important;
     background-color: #111111 !important;

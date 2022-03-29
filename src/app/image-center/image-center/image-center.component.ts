@@ -11,12 +11,13 @@ import { ImagePickerConf } from 'ngp-image-picker';
 })
 export class ImageCenterComponent implements OnInit, AfterViewInit {
   version = environment.version;
-  TOTAL_IMAGES = 8;
+  TOTAL_IMAGES = 6;
   imagePickerConf: ImagePickerConf = {
     borderRadius: '8px',
     language: 'en',
-    height: '250px',
-    width: '220px',
+    width: '100%',
+    aspectRatio: 4 / 3,
+    objectFit: 'contain',
     hideDownloadBtn: false,
   };
 
@@ -26,16 +27,19 @@ export class ImageCenterComponent implements OnInit, AfterViewInit {
   constructor(private spinner: NgxSpinnerService) {}
 
   ngOnInit(): void {
-    this.createForms();
     if (window.innerWidth < 800) {
+      this.TOTAL_IMAGES = 3;
       this.imagePickerConf = {
         borderRadius: '8px',
         language: 'en',
         height: '180px',
-        width: '150px',
+        aspectRatio: 4 / 3,
+        width: '100%',
+        objectFit: 'contain',
         hideDownloadBtn: false,
       };
     }
+    this.createForms();
   }
 
   ngAfterViewInit(): void {

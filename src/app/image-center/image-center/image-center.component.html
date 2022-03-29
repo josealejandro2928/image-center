@@ -8,13 +8,7 @@
   </p>
   <br />
   <br fxHide.lt-md />
-  <div
-    class="py-3"
-    style="column-gap: 1rem; row-gap: 1rem"
-    fxLayout="row wrap"
-    fxLayoutAlign="start start"
-    fxLayoutAlign.lt-md="center start"
-  >
+  <div class="image-container">
     <ngp-image-picker
       *ngFor="let image of galleryImages; let i = index"
       [_imageSrc]="image.image"
