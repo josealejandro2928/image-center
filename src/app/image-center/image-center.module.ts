@@ -6,7 +6,6 @@ import { CommonModule } from '@angular/common';
 
 import { ImageCenterRoutingModule } from './image-center-routing.module';
 import { ImageCenterComponent } from './image-center/image-center.component';
-// import { NgpImagePickerModule } from './../shared/ngp-image-picker/ngp-image-picker.module';
 import { NgpImagePickerModule } from 'ngp-image-picker';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
