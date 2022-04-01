@@ -11,6 +11,8 @@ export class ToolbarComponent implements OnInit {
   url = environment.url;
   linkFacebook = `https://www.facebook.com/sharer/sharer.php?u=${this.url}`;
   linkWhatApp = `https://api.whatsapp.com/send?text=${this.url}`;
+  linkedinApp = `https://www.linkedin.com/sharing/share-offsite/?url=${this.url}`;
+  telegramApp = `https://t.me/share/url?url=${this.url}`;
 
   constructor() {}
 
