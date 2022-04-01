@@ -28,7 +28,7 @@
     "@angular/router": "~13.1.1",
     "core-js": "^3.4.1",
     "crypto-js": "^4.0.0",
-    "ngp-image-picker": "^2.1.6",
+    "ngp-image-picker": "^2.2.1",
     "ngx-spinner": "^13.0.0",
     "ngx-toastr": "^12.1.0",
     "rxjs": "^6.5.3",
